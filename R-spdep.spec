@@ -4,19 +4,13 @@
 #
 Name     : R-spdep
 Version  : 0.7.8
-Release  : 13
+Release  : 14
 URL      : https://cran.r-project.org/src/contrib/spdep_0.7-8.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/spdep_0.7-8.tar.gz
 Summary  : Spatial Dependence: Weighting Schemes, Statistics and Models
 Group    : Development/Tools
 License  : GPL-2.0+
 Requires: R-spdep-lib
-Requires: R-LearnBayes
-Requires: R-coda
-Requires: R-expm
-Requires: R-gmodels
-Requires: R-sp
-Requires: R-spData
 BuildRequires : R-LearnBayes
 BuildRequires : R-coda
 BuildRequires : R-expm
@@ -57,11 +51,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1534426539
+export SOURCE_DATE_EPOCH=1534431619
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1534426539
+export SOURCE_DATE_EPOCH=1534431619
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
