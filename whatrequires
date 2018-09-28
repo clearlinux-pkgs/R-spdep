@@ -1,14 +1,4 @@
 # This file contains recursive sources that require this package
-R-DendSer
 R-ade4
-R-analogue
-R-bipartite
-R-dendextend
-R-dtw
-R-fpc
-R-mvoutlier
 R-pdfCluster
 R-prabclus
-R-robCompositions
-R-seriation
-R-vegan
