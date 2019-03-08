@@ -1,7 +1,9 @@
-0.8.1
+1.0.2
 R-LearnBayes
+R-RANN
 R-coda
 R-expm
 R-gmodels
+R-sf
 R-sp
 R-spData
