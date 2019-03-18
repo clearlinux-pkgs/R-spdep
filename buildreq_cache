@@ -2,8 +2,13 @@
 R-LearnBayes
 R-RANN
 R-coda
+R-deldir
+R-e1071
 R-expm
+R-gdata
 R-gmodels
+R-gtools
+R-maptools
 R-sf
 R-sp
 R-spData

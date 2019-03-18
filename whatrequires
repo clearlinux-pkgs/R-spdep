@@ -1,4 +1,6 @@
 # This file contains recursive sources that require this package
 R-ade4
+R-adegraphics
+R-adephylo
 R-pdfCluster
 R-prabclus

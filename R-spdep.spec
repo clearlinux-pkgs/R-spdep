@@ -4,26 +4,28 @@
 #
 Name     : R-spdep
 Version  : 1.0.2
-Release  : 21
+Release  : 22
 URL      : https://cran.r-project.org/src/contrib/spdep_1.0-2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/spdep_1.0-2.tar.gz
 Summary  : Spatial Dependence: Weighting Schemes, Statistics and Models
 Group    : Development/Tools
 License  : GPL-2.0+
 Requires: R-spdep-lib = %{version}-%{release}
-Requires: R-LearnBayes
-Requires: R-RANN
-Requires: R-coda
-Requires: R-expm
-Requires: R-gmodels
-Requires: R-sf
-Requires: R-sp
-Requires: R-spData
+Requires: R-deldir
+Requires: R-e1071
+Requires: R-gdata
+Requires: R-gtools
+Requires: R-maptools
 BuildRequires : R-LearnBayes
 BuildRequires : R-RANN
 BuildRequires : R-coda
+BuildRequires : R-deldir
+BuildRequires : R-e1071
 BuildRequires : R-expm
+BuildRequires : R-gdata
 BuildRequires : R-gmodels
+BuildRequires : R-gtools
+BuildRequires : R-maptools
 BuildRequires : R-sf
 BuildRequires : R-sp
 BuildRequires : R-spData
@@ -58,10 +60,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552072645
+export SOURCE_DATE_EPOCH=1552931415
 
 %install
-export SOURCE_DATE_EPOCH=1552072645
+export SOURCE_DATE_EPOCH=1552931415
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -97,8 +99,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library spdep|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  spdep || :
 
 
 %files
@@ -172,7 +173,6 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/spdep/help/spdep.rdx
 /usr/lib64/R/library/spdep/html/00Index.html
 /usr/lib64/R/library/spdep/html/R.css
-/usr/lib64/R/library/spdep/libs/symbols.rds
 
 %files lib
 %defattr(-,root,root,-)
