@@ -4,15 +4,22 @@
 #
 Name     : R-spdep
 Version  : 1.0.2
-Release  : 23
+Release  : 24
 URL      : https://cran.r-project.org/src/contrib/spdep_1.0-2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/spdep_1.0-2.tar.gz
 Summary  : Spatial Dependence: Weighting Schemes, Statistics and Models
 Group    : Development/Tools
 License  : GPL-2.0+
 Requires: R-spdep-lib = %{version}-%{release}
+Requires: R-DBI
+Requires: R-Rcpp
+Requires: R-classInt
+Requires: R-units
+BuildRequires : R-DBI
 BuildRequires : R-LearnBayes
 BuildRequires : R-RANN
+BuildRequires : R-Rcpp
+BuildRequires : R-classInt
 BuildRequires : R-coda
 BuildRequires : R-deldir
 BuildRequires : R-e1071
@@ -24,6 +31,7 @@ BuildRequires : R-maptools
 BuildRequires : R-sf
 BuildRequires : R-sp
 BuildRequires : R-spData
+BuildRequires : R-units
 BuildRequires : buildreq-R
 
 %description
@@ -55,10 +63,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552936569
+export SOURCE_DATE_EPOCH=1552962464
 
 %install
-export SOURCE_DATE_EPOCH=1552936569
+export SOURCE_DATE_EPOCH=1552962464
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "

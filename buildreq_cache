@@ -1,6 +1,9 @@
 1.0.2
+R-DBI
 R-LearnBayes
 R-RANN
+R-Rcpp
+R-classInt
 R-coda
 R-deldir
 R-e1071
@@ -12,3 +15,4 @@ R-maptools
 R-sf
 R-sp
 R-spData
+R-units
