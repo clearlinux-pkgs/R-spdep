@@ -1,4 +1,4 @@
-1.1.2
+1.1.3
 R-DBI
 R-LearnBayes
 R-RANN
@@ -12,6 +12,7 @@ R-gdata
 R-gmodels
 R-gtools
 R-maptools
+R-rgdal
 R-sf
 R-sp
 R-spData
