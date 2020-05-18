@@ -4,7 +4,7 @@
 #
 Name     : R-spdep
 Version  : 1.1.3
-Release  : 32
+Release  : 33
 URL      : https://cran.r-project.org/src/contrib/spdep_1.1-3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/spdep_1.1-3.tar.gz
 Summary  : Spatial Dependence: Weighting Schemes, Statistics
@@ -16,41 +16,31 @@ Requires: R-coda
 Requires: R-deldir
 Requires: R-expm
 Requires: R-gmodels
+Requires: R-maptools
+Requires: R-rgdal
 Requires: R-sf
 Requires: R-sp
 Requires: R-spData
-BuildRequires : R-DBI
+Requires: R-xtable
 BuildRequires : R-LearnBayes
-BuildRequires : R-RANN
-BuildRequires : R-Rcpp
-BuildRequires : R-classInt
 BuildRequires : R-coda
 BuildRequires : R-deldir
-BuildRequires : R-e1071
 BuildRequires : R-expm
-BuildRequires : R-gdata
 BuildRequires : R-gmodels
-BuildRequires : R-gtools
 BuildRequires : R-maptools
 BuildRequires : R-rgdal
 BuildRequires : R-sf
 BuildRequires : R-sp
 BuildRequires : R-spData
-BuildRequires : R-units
+BuildRequires : R-xtable
 BuildRequires : buildreq-R
 
 %description
-Spatial dependence: weighting schemes, statistics and models
-A collection of functions to create spatial weights matrix objects from
-polygon contiguities, from point patterns by distance and tesselations,
-for summarising these objects, and for permitting their use in spatial
-data analysis; a collection of tests for spatial autocorrelation,
-including global Moran's I, Geary's C, Hubert/Mantel general cross product
-statistic, Empirical Bayes estimates and spatial Index, and Getis/Ord G,
-local Moran's I and Getis/Ord G, saddlepoint approximations for global
-and local Moran's I; and functions for estimating spatial simultaneous
-autoregressive (SAR) lag and error models, weighted and unweighted
-SAR and CAR spatial regression models, and GM SAR error models.
+objects from polygon 'contiguities', from point patterns by distance and
+  tessellations, for summarizing these objects, and for permitting their
+  use in spatial data analysis, including regional aggregation by minimum
+  spanning tree; a collection of tests for spatial 'autocorrelation',
+  including global 'Morans I' and 'Gearys C' proposed by 'Cliff' and 'Ord'
 
 %package lib
 Summary: lib components for the R-spdep package.
@@ -62,21 +52,22 @@ lib components for the R-spdep package.
 
 %prep
 %setup -q -c -n spdep
+cd %{_builddir}/spdep
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1571095230
+export SOURCE_DATE_EPOCH=1589785383
 
 %install
-export SOURCE_DATE_EPOCH=1571095230
+export SOURCE_DATE_EPOCH=1589785383
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
