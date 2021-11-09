@@ -1,5 +1,4 @@
 # This file contains recursive sources that require this package
-R-adegenet
 R-adegraphics
 R-adespatial
 R-prabclus
