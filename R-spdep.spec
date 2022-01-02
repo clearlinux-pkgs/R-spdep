@@ -4,7 +4,7 @@
 #
 Name     : R-spdep
 Version  : 1.1.13
-Release  : 51
+Release  : 52
 URL      : https://cran.r-project.org/src/contrib/spdep_1.1-13.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/spdep_1.1-13.tar.gz
 Summary  : Spatial Dependence: Weighting Schemes, Statistics
@@ -59,10 +59,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1639505075
+export SOURCE_DATE_EPOCH=1641130559
 
 %install
-export SOURCE_DATE_EPOCH=1639505075
+export SOURCE_DATE_EPOCH=1641130559
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
