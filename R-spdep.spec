@@ -4,7 +4,7 @@
 #
 Name     : R-spdep
 Version  : 1.2.4
-Release  : 57
+Release  : 58
 URL      : https://cran.r-project.org/src/contrib/spdep_1.2-4.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/spdep_1.2-4.tar.gz
 Summary  : Spatial Dependence: Weighting Schemes, Statistics
