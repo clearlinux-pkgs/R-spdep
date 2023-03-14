@@ -4,7 +4,7 @@
 #
 Name     : R-spdep
 Version  : 1.2.8
-Release  : 64
+Release  : 65
 URL      : https://cran.r-project.org/src/contrib/spdep_1.2-8.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/spdep_1.2-8.tar.gz
 Summary  : Spatial Dependence: Weighting Schemes, Statistics
@@ -26,9 +26,6 @@ BuildRequires : R-sp
 BuildRequires : R-spData
 BuildRequires : R-units
 BuildRequires : buildreq-R
-# Suppress stripping binaries
-%define __strip /bin/true
-%define debug_package %{nil}
 
 %description
 objects from polygon 'contiguities', from point patterns by distance and
@@ -54,10 +51,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1677604994
+export SOURCE_DATE_EPOCH=1678831210
 
 %install
-export SOURCE_DATE_EPOCH=1677604994
+export SOURCE_DATE_EPOCH=1678831210
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
