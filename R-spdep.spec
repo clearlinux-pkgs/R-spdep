@@ -6,10 +6,10 @@
 # autospec commit: fbcebd0
 #
 Name     : R-spdep
-Version  : 1.3.4
-Release  : 73
-URL      : https://cran.r-project.org/src/contrib/spdep_1.3-4.tar.gz
-Source0  : https://cran.r-project.org/src/contrib/spdep_1.3-4.tar.gz
+Version  : 1.3.5
+Release  : 74
+URL      : https://cran.r-project.org/src/contrib/spdep_1.3-5.tar.gz
+Source0  : https://cran.r-project.org/src/contrib/spdep_1.3-5.tar.gz
 Summary  : Spatial Dependence: Weighting Schemes, Statistics
 Group    : Development/Tools
 License  : GPL-2.0+
@@ -62,10 +62,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1717436220
+export SOURCE_DATE_EPOCH=1718232540
 
 %install
-export SOURCE_DATE_EPOCH=1717436220
+export SOURCE_DATE_EPOCH=1718232540
 rm -rf %{buildroot}
 LANG=C.UTF-8
 CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -159,15 +159,7 @@ R CMD check --no-manual --no-examples --no-codoc . || :
 /usr/lib64/R/library/spdep/etc/misc/sids.zip
 /usr/lib64/R/library/spdep/etc/misc/sids2.zip
 /usr/lib64/R/library/spdep/etc/misc/unstand_sn.txt
-/usr/lib64/R/library/spdep/etc/shapes/bhicv.dbf
-/usr/lib64/R/library/spdep/etc/shapes/bhicv.shp
-/usr/lib64/R/library/spdep/etc/shapes/bhicv.shx
-/usr/lib64/R/library/spdep/etc/shapes/columbus.dbf
-/usr/lib64/R/library/spdep/etc/shapes/columbus.shp
-/usr/lib64/R/library/spdep/etc/shapes/columbus.shx
-/usr/lib64/R/library/spdep/etc/shapes/eire.dbf
-/usr/lib64/R/library/spdep/etc/shapes/eire.shp
-/usr/lib64/R/library/spdep/etc/shapes/eire.shx
+/usr/lib64/R/library/spdep/etc/shapes/bhicv.gpkg
 /usr/lib64/R/library/spdep/etc/weights/columbus.gal
 /usr/lib64/R/library/spdep/etc/weights/us48.txt
 /usr/lib64/R/library/spdep/etc/weights/us48_q.GAL
