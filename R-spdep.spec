@@ -6,10 +6,10 @@
 # autospec commit: 5424026
 #
 Name     : R-spdep
-Version  : 1.3.7
-Release  : 77
-URL      : https://ftp.osuosl.org/pub/cran/src/contrib/spdep_1.3-7.tar.gz
-Source0  : https://ftp.osuosl.org/pub/cran/src/contrib/spdep_1.3-7.tar.gz
+Version  : 1.3.8
+Release  : 78
+URL      : https://ftp.osuosl.org/pub/cran/src/contrib/spdep_1.3-8.tar.gz
+Source0  : https://ftp.osuosl.org/pub/cran/src/contrib/spdep_1.3-8.tar.gz
 Summary  : Spatial Dependence: Weighting Schemes, Statistics
 Group    : Development/Tools
 License  : GPL-2.0+
@@ -62,10 +62,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1732635349
+export SOURCE_DATE_EPOCH=1733327168
 
 %install
-export SOURCE_DATE_EPOCH=1732635349
+export SOURCE_DATE_EPOCH=1733327168
 rm -rf %{buildroot}
 LANG=C.UTF-8
 CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -O3 -flto -fno-semantic-interposition "
